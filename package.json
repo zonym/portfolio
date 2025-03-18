@@ -1,0 +1,13 @@
+{
+  "name": "@zonym/portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio built using React and Three.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "fmt": "npx prettier . -w"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
