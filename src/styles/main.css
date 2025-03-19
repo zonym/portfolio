@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+::selection {
+    background: #2ddab8;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0c0f13;
+    overflow: hidden;
+    font-family: 'Sulphur Point', sans-serif;
+    color: #8b8b8b;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #545454;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #8b8b8b;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 53em) {
+    body {
+        overflow: hidden;
+    }
+}

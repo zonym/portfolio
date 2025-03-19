@@ -1,10 +1,9 @@
-import React from 'react';
+import './styles/main.css';
+
+import React, { Suspense } from 'react';
+
+import Fallback from './Fallback';
 
 export default function App() {
-    return (
-        <div>
-            <h1>Hello, world!</h1>
-            <p>This was built using Webpack 5!</p>
-        </div>
-    );
+    return <Suspense fallback={<Fallback />}></Suspense>;
 }
