@@ -5,9 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "npx webpack --mode production",
+    "build": "npm run lint && npx webpack --mode production",
     "fmt": "npx prettier . -w",
-    "serve": "npx webpack serve --mode development",
+    "lint": "npm run typecheck && npx eslint",
+    "serve": "npm run typecheck && npx webpack serve --mode development",
     "typecheck": "npx tsc --noEmit"
   },
   "devDependencies": {
@@ -19,9 +20,12 @@
     "@types/react": "^19.0.11",
     "@types/react-dom": "^19.0.4",
     "babel-loader": "^10.0.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.4",
     "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
