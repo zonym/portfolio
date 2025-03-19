@@ -5,10 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "npm run lint && npx webpack --mode production",
+    "build": "npm run lint && npx webpack build",
     "fmt": "npx prettier . -w",
     "lint": "npm run typecheck && npx eslint",
-    "serve": "npm run typecheck && npx webpack serve --mode development",
+    "serve": "npm run typecheck && npx webpack serve",
     "typecheck": "npx tsc --noEmit"
   },
   "devDependencies": {
