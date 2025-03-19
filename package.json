@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "fmt": "npx prettier . -w"
+    "build": "npx webpack --mode production",
+    "fmt": "npx prettier . -w",
+    "serve": "npx webpack serve --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
